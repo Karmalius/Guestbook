@@ -1,9 +1,11 @@
 var express = require("express");
 var app = express();
 var fs = require("fs");
+const PORT = process.env.PORT || 8081;
+
 var bodyParser = require("body-parser");
 
-app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/public/index.html");
@@ -18,7 +20,7 @@ app.post("/newmessage", function (req, res) {
     var data = require("./public/data.json");
     var today = new Date();
 
-    var date = today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear();
+    var date = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
 
     data.push({
         "Name": req.body.name,
@@ -39,21 +41,9 @@ app.post("/newmessage", function (req, res) {
 
 
 app.get("/guestbook", function (req, res) {
-    var data = require("./public/data.json");
-
-    var results ="<table border='1'><tr><th>Name</th><th>Country</th><th>Message</th><th>Date</th></tr>";
-    for (var i=0; i<data.length; i++){
-        results +=
-        "<tr>"+
-        "<td>"+data[i].Name+"</td>"+
-        "<td>"+data[i].Country+"</td>"+
-        "<td>"+data[i].Message+"</td>"+
-        "<td>"+data[i].Date+"</td>"+
-        "</tr>";
-    }
-    res.send(results);
+    res.sendFile(__dirname + "/public/guestbook.html");
 });
 
-app.listen(8081, function () {
+app.listen(PORT, () => {
     console.log("Example app listening on port 8081!");
-});
+  });
