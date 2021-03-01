@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    
+
     $.getJSON("data.json", function (data) {
 
 
-       var table = "<table border='1'><tr><th>Name</th><th>Country</th><th>Message</th><th>Date</th></tr>";
+       var table = "<table><tr><th>Name</th><th>Country</th><th>Message</th><th>Date</th></tr>";
         for (var i = 0; i < data.length; i++) {
             table +=
                 "<tr>" +

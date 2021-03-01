@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html>
-<body>
-    
-<h1>Write a new message!</h1>
+  <head>
+    <title>New message</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/mystyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="http://localhost:8081/">FRONTPAGE</a>
+        </div>
+        <div class="col-sm-4">
+          <a href="http://localhost:8081/guestbook">GUESTBOOK</a>
+        </div>
+        <div class="col-sm-4">
+          <a href="http://localhost:8081/newmessage">NEWMESSAGE</a>
+        </div>
+      </div>
+      <br />
+      <h1>Write a new message!</h1>
+      <br />
 
-<form method="POST" action="/newmessage">
-    Name <input type="text" name="name">
-    Country <input type="text" name="country">
-    Message <input type="text" name="message">
-<input type="submit" value="Submit">
-</form>
-
-</body>
+      <form method="POST" action="/newmessage">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name.."
+        />
+        <br>
+        <label for="country">Country</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="Where you live.."
+        />
+        <br>
+        <label for="message">Message</label>
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="What you want to tell.."
+        />
+        <br>
+        <br>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>

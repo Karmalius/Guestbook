@@ -38,7 +38,7 @@ app.post("/newmessage", function (req, res) {
         console.log("It is saved!");
     });
 
-    res.send("Saved to the file");
+    res.sendFile(__dirname + "/public/continue.html");
 });
 
 

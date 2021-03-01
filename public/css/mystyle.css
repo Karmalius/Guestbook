@@ -1,13 +1,44 @@
-table, td, th {  
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    padding: 15px;
-  }
+body {
+  background-color: black;
+  color: white;
+}
+table {
+  padding: 15px;
+  background-color: #575757;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+td, th {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+a {
+  color: rgb(202, 199, 199);
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  position: relative;
+  min-height: 1600px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #e2e2e2;
+}

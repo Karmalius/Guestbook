@@ -2,11 +2,30 @@
 <html>
   <head>
     <title>Guestbook</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/mystyle.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <p>Guestbook tulee tänne</p>
+    <div class="container">
+      <br>
+    <div class="row">
+      <div class="col-sm-4"><a href="http://localhost:8081/">FRONTPAGE</a></div>
+      <div class="col-sm-4">
+        <a href="http://localhost:8081/guestbook">GUESTBOOK</a>
+      </div>
+      <div class="col-sm-4">
+        <a href="http://localhost:8081/newmessage">NEWMESSAGE</a>
+      </div>
+    </div>
+    <br />
+    <h1>GUESTBOOK</h1>
+    <br />
     <div id="place"></div>
+    </div>
   </body>
   <script src="book.js"></script>
 </html>
