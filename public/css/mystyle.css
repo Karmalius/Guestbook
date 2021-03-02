@@ -2,6 +2,12 @@ body {
   background-color: #000000;
   color:  #66FCF1;
 }
+
+.container {
+  position: relative;
+  min-height: 1600px;
+}
+
 table {
   padding: 15px;
   background-color: #000000;
@@ -25,11 +31,6 @@ a {
 
 a:hover {
   color: #66FCF1;
-}
-
-.container {
-  position: relative;
-  min-height: 1600px;
 }
 
 input[type=text] {

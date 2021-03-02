@@ -12,36 +12,37 @@
   <body>
     <div class="container">
       <br />
-        <div class="row">
-          <div class="col-3">
-            <a href="/">FRONTPAGE</a>
-          </div>
-          <div class="col">
-            <a href="/guestbook">GUESTBOOK</a>
-          </div>
-          <div class="col">
-            <a href="/newmessage">NEW MESSAGE</a>
-          </div>
-          <div class="col">
-              <a href="/ajaxmessage">AJAX MESSAGE</a>
-            </div>
+      <div class="row">
+        <div class="col-3">
+          <a href="/">FRONTPAGE</a>
         </div>
-      <br>
-      <br>
-      <br>
-      <h1>AJAX MESSAGE    <img src="https://cdn.pixabay.com/photo/2018/09/24/15/44/cloud-3700227_960_720.png" alt="Rainbow cloud"></h1>
+        <div class="col">
+          <a href="/guestbook">GUESTBOOK</a>
+        </div>
+        <div class="col">
+          <a href="/newmessage">NEW MESSAGE</a>
+        </div>
+        <div class="col">
+          <a href="/ajaxmessage">AJAX MESSAGE</a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h1>
+        AJAX MESSAGE
+        <img
+          src="https://cdn.pixabay.com/photo/2018/09/24/15/44/cloud-3700227_960_720.png"
+          alt="Rainbow cloud"
+        />
+      </h1>
       <br />
       <p>Write a new AJAX message to the Guestbook!</p>
-      <br>
+      <br />
       <form method="POST" action="/ajaxmessage">
         <label for="name">Name</label>
-        <input
-          type="text"
-          id="name2"
-          name="name"
-          placeholder="Your name.."
-        />
-        <br>
+        <input type="text" id="name2" name="name" placeholder="Your name.." />
+        <br />
         <label for="country">Country</label>
         <input
           type="text"
@@ -49,7 +50,7 @@
           name="country"
           placeholder="Where you live.."
         />
-        <br>
+        <br />
         <label for="message">Message</label>
         <input
           type="text"
@@ -57,12 +58,12 @@
           name="message"
           placeholder="What you want to tell.."
         />
-        <br>
-        <br>
+        <br />
+        <br />
         <input type="button" id="ajaxbutton" value="Submit" />
       </form>
-      <br>
-      <br>
+      <br />
+      <br />
       <div id="status"></div>
     </div>
     <script src="ajax.js"></script>
