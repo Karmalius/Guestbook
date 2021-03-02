@@ -1,12 +1,10 @@
 # Guestbook
 
-Info about the app:
+Infoa:
 
-Node-server has all 4 routes present.
-Frontpage-route has actual content and structure, not only text.
-Guestbook-route loads, parses and formats using style libraries.
-New message-route has a form with styling, checks for errors, posts data and saves the data to a JSON file.
-Ajax message-route checks for errors, posts ajax data, parses & displays results with style (and also saves the data to a JSON file).
-The app is published in Heroku using GitHub.
-
-https://millasguestbook.herokuapp.com/
+Node-serverissä on 4 reittiä.
+Frontpage-reitissä on sisältöä ja rakenne eikä pelkkää tekstiä.
+Guestbook-reitissä on ladattua, parsittua ja muotoiltua JSON dataa.
+New message-reitissä on muotoiltu lomake ja tyhjien kenttien tarkistus. Se lähettää dataa ja tallentaa sitä JSON tiedostoon.
+Ajax message-reitissä on muotoiltu lomake ja tyhjien kenttien tarkistus. Se lähettää dataa ja esittää sen muotoiltuna sivulla (sekä tallentaa sitä JSON tiedostoon).
+App on julkaistu Herokussa GitHubin kautta: https://millasguestbook.herokuapp.com/
