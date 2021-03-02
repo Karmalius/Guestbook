@@ -1,8 +1,8 @@
+const PORT = process.env.PORT || 8081;
+const http = require("http");
 var express = require("express");
 var app = express();
 var fs = require("fs");
-const PORT = process.env.PORT || 8081;
-
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({ extended: true }));
