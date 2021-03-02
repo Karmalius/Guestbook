@@ -13,7 +13,7 @@ $(document).ready(function () {
                 "<td>" + data[i].Date + "</td>" +
                 "</tr>";
         }
-        // Asetetaan luotu taulukko place-elementtiin.
+        // Asetetaan luotu taulukko place -elementtiin.
         $("#place").html(table);
     });
 });

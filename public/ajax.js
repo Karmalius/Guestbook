@@ -17,11 +17,11 @@ $(document).ready(function () {
         } else if ($("#message2").val() == "") {
             alert("One or more fields are empty! Check that you have written something on every field.");
         } else {
-            // Lähetetään AJAX olio joka palauttaa vastauksensa status-kenttään.   
+            // Lähetetään AJAX olio joka palauttaa vastauksensa status -kenttään.   
             $.post("/ajaxmessage", data, function (response, status) {
                 $("#status").html(response);
             });
         }
     });
-    
+
 });

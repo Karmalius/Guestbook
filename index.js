@@ -1,4 +1,4 @@
-// Määritellään palvelimen portti.
+// Määritellään palvelimelle portti.
 const PORT = process.env.PORT || 8081;
 
 // Otetaan moduuleja käyttöön.
