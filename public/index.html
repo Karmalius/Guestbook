@@ -12,18 +12,46 @@
     <div class="container">
         <br>
         <div class="row">
-            <div class="col-sm-4"><a href="http://localhost:8081/">FRONTPAGE</a></div>
-            <div class="col-sm-4">
-              <a href="http://localhost:8081/guestbook">GUESTBOOK</a>
-            </div>
-            <div class="col-sm-4">
-              <a href="http://localhost:8081/newmessage">NEWMESSAGE</a>
-            </div>
+          <div class="col-3">
+            <a href="http://localhost:8081/">FRONTPAGE</a>
           </div>
+          <div class="col">
+            <a href="http://localhost:8081/guestbook">GUESTBOOK</a>
+          </div>
+          <div class="col">
+            <a href="http://localhost:8081/newmessage">NEW MESSAGE</a>
+          </div>
+          <div class="col">
+              <a href="http://localhost:8081/ajaxmessage">AJAX MESSAGE</a>
+            </div>
+        </div>
       <br>
-      <h1>Welcome!</h1>
+      <br>
+      <br>
+      <h1>WELCOME!    <img src="https://cdn.pixabay.com/photo/2018/09/24/15/44/cloud-3700227_960_720.png" alt="Rainbow cloud"></h1>
       <br />
-      <p>This is the front page of my ME*N course project 1</p>
+      <p>
+        This is the frontpage of my Guestbook app. 
+        <br>
+        <br>
+        This app will allow users to add messages to a public guestbook page. 
+        I created web server with Node.js and Express. 
+        I also added four routes. You can see the links to them on top of the page.
+        <br>
+        <br>
+        Guestbook -route has a JSON-file parsed as a formatted table.
+        <br>
+        New message –route has an input form where messages can be sent. 
+        The messages will be savet to the JSON file.
+        <br>
+        Ajax message -route has also an input form, but it runs a Javascript-code on page 
+        which will collect the data from the text fields and send them to the backend as AJAX-call. 
+        It will also return all the messages as a response to the page, under the form.
+        <br>
+        <br>
+        I used jQuery to implement the code.
+      </p>
+      <br>
     </div>
   </body>
 </html>

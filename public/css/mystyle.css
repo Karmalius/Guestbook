@@ -1,16 +1,16 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color:  #66FCF1;
 }
 table {
   padding: 15px;
-  background-color: #575757;
+  background-color: #000000;
   border-collapse: collapse;
   width: 100%;
 }
 
 tr {
-  border: 5px solid rgb(0, 0, 0);
+  border-bottom: 3px solid #21706c;
   border-radius: 5px;
 }
 
@@ -20,11 +20,11 @@ td, th {
 }
 
 a {
-  color: rgb(202, 199, 199);
+  color: #45A29E;
 }
 
 a:hover {
-  color: rgb(255, 255, 255);
+  color: #66FCF1;
 }
 
 .container {
@@ -37,8 +37,23 @@ input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 3px solid #21706c;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #e2e2e2;
+  background-color: #000000;
+  color: #66FCF1;
+}
+
+input[type=submit], input[type=button] {
+  padding:5px 15px; 
+  background:#000000; 
+  border: 3px solid #21706c;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  color: #66FCF1;
+}
+
+img {
+  width: 40px;
 }
